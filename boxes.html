@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>boxes</title>
+
+    <style>
+        .greenbox {
+            display: inline-block;
+            width: 150px;
+            height: 75px;
+            margin: 10px;
+            border: solid 3px green;
+            border-radius: .5rem;
+            text-align: center;
+        }
+
+        .greenbox2 {
+            display: flex;
+            width: 150px;
+            height: 75px;
+            margin: 10px;
+            border: solid 3px green;
+            border-radius: .5rem;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            line-height: 3;
+            color: white;
+            background-color: #464646;
+            padding: 8px;
+            border-radius: .25rem;
+        }
+        a:hover {
+            opacity: .8;
+        }
+        a:active {
+            opacity: .5;
+        }
+    </style>
+</head>
+<body>
+<h2>인라인 + 블록 특성(display: inline-block)</h2>
+
+<div class="greenbox">박스1</div>
+<div class="greenbox">박스2</div>
+<div class="greenbox">박스3</div>
+<div class="greenbox">박스4</div>
+<div class="greenbox">박스5</div>
+<div class="greenbox">박스6</div>
+
+<br><br><br><br>
+
+<div class="greenbox2">박스1</div>
+<div class="greenbox2">박스2</div>
+<div class="greenbox2">박스3</div>
+<div class="greenbox2">박스4</div>
+<div class="greenbox2">박스5</div>
+<div class="greenbox2">박스6</div>
+<br><br>
+<a href="./index.html">청첩장으로 돌아가기</a>
+</body>
+</html>

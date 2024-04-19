@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>청첩장</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'SUIT', sans-serif;
+    }
+
+    h1 {
+        font-weight: 800;
+        color: #464646;
+    }
+    p {
+        color: #656565;
+    }
+    ul {
+        list-style-type: none;
+        font-weight: 700;
+    }
+    a {
+        text-decoration: none;
+        line-height: 3;
+        color: white;
+        background-color: #464646;
+        padding: 8px;
+        border-radius: .25rem;
+    }
+    a:hover {
+        opacity: .8;
+    }
+    a:active {
+        opacity: .5;
+    }
+
+
+
+    .menu {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        width: 500px;
+        padding: 10px;
+        margin: 20px 0 30px 0;
+        border: solid .5px yellowgreen;
+        border-radius: .5rem;
+        text-align: center;
+
+        transition: all .5s;
+    }
+    .menu li {
+        display: inline;
+    }
+
+    .banner {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        margin-bottom: 20px;
+        width: 525px;
+        height: 650px;
+        /*border: solid 1px red;*/
+
+        background-image: url("./img/banner3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: .5rem;
+        border: solid .5px lightgray;
+
+        transition: all .5s;
+    }
+
+    .box_union {
+        text-align: center;
+    }
+    .box {
+        line-height: 75px;
+        display: inline-block;
+        width: 150px;
+        height: 75px;
+        border: solid .5px darkgray;
+        border-radius: .5rem;
+        margin: 9px;
+        padding: 5px;
+
+        transition: all .5s;
+    }
+
+    button {
+        width: 150px;
+        height: 75px;
+        border: none;
+        background: white;
+    }
+    button:hover {
+        color: gray;
+    }
+    button:active {
+        color: coral;
+    }
+
+    .info {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        margin: 20px 0 20px 0;
+        width: 525px;
+        padding-bottom: 20px;
+        /*border: solid 1px red;*/
+
+        line-height: 1.25;
+        padding-top: 15px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: .5rem;
+        border: solid .5px lightgray;
+
+        transition: all .5s;
+    }
+    .calendar {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        background-image: url("./img/calendar.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        margin: 20px 0 0 0;
+        border: solid .5px darkgray;
+        width: 450px;
+        height: 450px;
+
+        transition: all .5s;
+    }
+
+    .location {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        margin: 20px 0 20px 0;
+        width: 525px;
+        padding-bottom: 20px;
+        /*border: solid 1px red;*/
+
+        line-height: 1.25;
+        padding-top: 15px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: .5rem;
+        border: solid .5px lightgray;
+
+        transition: all .5s;
+    }
+    .map {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        background-image: url("./img/map.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        margin: 20px 0 0 0;
+        border: solid .5px darkgray;
+        width: 450px;
+        height: 450px;
+
+        transition: all .5s;
+    }
+
+    .gallery {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        margin: 20px 0 20px 0;
+        width: 525px;
+        padding-bottom: 20px;
+        /*border: solid 1px red;*/
+
+        line-height: 1.25;
+        padding-top: 15px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: .5rem;
+        border: solid .5px lightgray;
+
+        transition: all .5s;
+    }
+
+    .extra {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        margin: 20px 0 20px 0;
+        width: 525px;
+        padding-bottom: 20px;
+        /*border: solid 1px red;*/
+
+        line-height: 1.25;
+        padding-top: 15px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: .5rem;
+        border: solid .5px lightgray;
+
+        transition: all .5s;
+    }
+
+    /*반응형 구현*/
+    @media screen and (max-width: 580px) {
+        .menu {
+            width: 400px;
+        }
+        .banner {
+            width: 425px;
+            height: 550px;
+        }
+        .box {
+            width: 116px;
+        }
+        button {
+            width: 116px;
+        }
+        .info {
+            width: 425px;
+        }
+        .calendar {
+            width: 350px;
+            height: 350px;
+        }
+        .location {
+            width: 425px;
+        }
+        .map {
+            width: 350px;
+            height: 350px;
+        }
+        .gallery {
+            width: 425px;
+        }
+        .extra {
+            width: 425px;
+        }
+    }
+</style>
+<body>
+<ul class="menu">
+    <li>신랑 &nbsp;&nbsp;|&nbsp;&nbsp;</li>
+    <li>김호준 &nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li>신부 &nbsp;&nbsp;|&nbsp;&nbsp;</li>
+    <li>미모지</li>
+</ul>
+
+<div class="banner">
+
+</div>
+
+<div class="box_union">
+    <div class="box"><button id="btn1">소개</button></div>
+    <div class="box"><button id="btn2">오시는 길</button></div>
+    <div class="box"><button id="btn3">갤러리</button></div>
+</div>
+
+
+<section class="info" id="section1">
+    <h1>김 호 준 | 미 모 지</h1>
+    <br>
+    <p>9999년 5월 20일 토요일 오후 2:00</p>
+    <p>그랜드워커힐 - 서울</p>
+
+    <div class="calendar"></div>
+    <br>
+    <p>먼 길 와주셔서 감사한 마음을 담아 <br> 예식 후, CSS 코드를 드립니다.</p>
+</section>
+
+
+<section class="location" id="section2">
+    <h1>오시는 길</h1>
+    <div class="map"></div>
+    <br>
+    <h3>자가용</h3>
+    <p>그랜드워커힐 주차장 (3시간 무료 주차권 제공)</p>
+    <br><br>
+    <h3>대중교통</h3>
+    <p>지하철 또는 버스 (워커힐 셔틀버스 운행)</p>
+</section>
+
+
+<section class="gallery" id="section3">
+    <h1>갤러리</h1>
+    <img src="./img/female2.png">
+    <img src="./img/male2.png">
+    <img src="./img/female3.png">
+    <img src="./img/male3.png">
+</section>
+
+
+<section class="extra">
+    <h1>엑스트라</h1>
+    <br>
+    <a href="./list_style_image.html">list style image</a>
+    <a href="./book_banner1.html">book banner</a>
+    <a href="./boxes.html">inline-block</a>
+    <a href="./inline_block.html">inline & block</a> <br>
+    <a href="./border.html">border</a>
+    <a href="./border_radius.html">border_radius</a>
+    <a href="./h_menu.html">h menu</a>
+    <a href="./scroll_test.html">scroll test</a> <br>
+    <a href="v_menu.html">v menu</a>
+    <a href="./various_border.html">various border</a>
+</section>
+
+
+<script>
+    let btn1 = document.querySelector('#btn1');
+    let btn2 = document.querySelector('#btn2');
+    let btn3 = document.querySelector('#btn3');
+
+    //각 섹션별 위치 저장
+    let location1 = document.querySelector('#section1').offsetTop;
+    let location2 = document.querySelector('#section2').offsetTop;
+    let location3 = document.querySelector('#section3').offsetTop;
+
+
+    // 어느 위치에서든 절대위치로 이동 scrollTo
+    btn1.addEventListener('click', () => {
+        window.scrollTo({top: location1 - 10, behavior: 'smooth'});
+    });
+    btn2.addEventListener('click', () => {
+        window.scrollTo({top: location2 - 10, behavior: 'smooth'});
+    });
+    btn3.addEventListener('click', () => {
+        window.scrollTo({top: location3 - 10, behavior: 'smooth'});
+    });
+
+
+
+
+</script>
+</body>
+</html>
