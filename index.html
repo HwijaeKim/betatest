@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="koß">
+<head>
+  <meta charset="UTF-8">
+  <title>사나이 CSS클럽 입단테스트</title>
+
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'SUIT', sans-serif;
+  }
+  .bg {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    filter: brightness(.3);
+    background-image: url("./sources/ncc_bg2.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+
+  .title p {
+    position: absolute;
+    margin: 50px 0 0 50px;
+    font-size: 20px;
+    font-weight: 200;
+    z-index: 1;
+    color: white;
+  }
+  .title h1 {
+    position: absolute;
+    margin: 75px 0 0 50px;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, .9);
+    z-index: 1;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    border: none;
+    padding: 15px 60px;
+    font-size: 22px;
+    font-weight: 200;
+    background: rgba(255, 255, 255, .8);
+  }
+  button:hover {
+    font-weight: 700;
+    background: coral;
+  }
+  button:active {
+    opacity: .5;
+  }
+</style>
+<body>
+
+<header>
+  <div class="title">
+  <p>HTML/JavaScript면 충분합니다.</p>
+  <h1>사나이CSS클럽에 가입하세요</h1>
+</div>
+  <label>
+    <button><a href="./in_game.html">입단테스트</a></button>
+  </label>
+  <div class="bg"></div>
+</header>
+
+</body>
+</html>

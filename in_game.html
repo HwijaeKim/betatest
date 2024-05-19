@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>입단테스트</title>
+
+  <link href="https://font.elice.io/css?family=Elice+DX+Neolli" rel="stylesheet">
+  <link href="http://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css" rel="stylesheet" type="text/css">
+
+
+  <link rel="stylesheet" href="./in_game_style.css">
+</head>
+
+<body>
+<header>
+  <nav>
+    <p class="title">NO CSS CLUB 입단테스트</p>
+    <span class="user">USER_INFO</span>
+    <span class="count">COUNT</span>
+    <span class="remain">REMAIN_TIME</span>
+    <button>HOW TO PLAY</button>
+  </nav>
+</header>
+<div class="clear"></div>
+
+<marquee><p>TITLE</p></marquee>
+
+<div class="clear"></div>
+
+<main>
+  <section class="reg_container">
+    <div class="top">
+      <p>no css club 입단 테스트.exe</p>
+    </div>
+
+    <article class="main_content">
+      <div class="container">
+        메인콘텐츠
+      </div>
+    </article>
+  </section>
+
+  <section class="config">
+    <div class="top">
+      <p>플레이 방법.txt / notepad</p>
+    </div>
+
+    <article class="main_content">
+      <div class="container">
+        게임방법
+      </div>
+    </article>
+  </section>
+
+
+</main>
+
+
+<script>
+  let btn = document.querySelector('button');
+  let main_contents = document.querySelector('.reg_container');
+  let config = document.querySelector('.config');
+
+
+  btn.addEventListener('click', () => {
+    if(main_contents.classList.contains('active_config')) {
+      main_contents.classList.remove('active_config');
+      config.classList.remove('active');
+      console.log('if통과');
+    }
+    else {
+      main_contents.classList.add('active_config');
+      config.classList.add('active');
+      console.log('else통과');
+    }
+  })
+
+
+
+
+</script>
+
+</body>
+</html>
